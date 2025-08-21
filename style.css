@@ -1,0 +1,90 @@
+:root {
+  --color-background: rgba(252, 252, 249, 1);
+  --color-surface: rgba(255, 255, 253, 1);
+  --color-text: rgba(19, 52, 59, 1);
+  --color-text-secondary: rgba(98, 108, 113, 1);
+  --color-primary: rgba(33, 128, 141, 1);
+  --color-primary-hover: rgba(29, 116, 128, 1);
+  --color-primary-active: rgba(26, 104, 115, 1);
+  --color-secondary: rgba(94, 82, 64, 0.12);
+  --color-secondary-hover: rgba(94, 82, 64, 0.2);
+  --color-secondary-active: rgba(94, 82, 64, 0.25);
+  --color-border: rgba(94, 82, 64, 0.2);
+  --color-btn-primary-text: rgba(252, 252, 249, 1);
+  --color-card-border: rgba(94, 82, 64, 0.12);
+  --color-error: rgba(192, 21, 47, 1);
+  --color-success: rgba(33, 128, 141, 1);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation header styles */
+.app-header {
+  background-color: var(--color-primary);
+  color: var(--color-btn-primary-text);
+  padding: 1rem;
+}
+
+.logo h2 {
+  margin: 0;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: var(--color-btn-primary-text);
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.nav-btn.active,
+.nav-btn:hover {
+  background-color: var(--color-primary-hover);
+}
+
+/* Main content styles */
+.main-content {
+  padding: 2rem;
+}
+
+/* Metrics cards */
+.metrics-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.metric-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: 8px;
+  padding: 1rem;
+  flex: 1 1 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.metric-change {
+  font-size: 0.875rem;
+}
+
+.metric-change.positive {
+  color: var(--color-success);
+}
